@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>crumble timing tile generator</title>
+</head>
+<body>
+<script type="text/javascript">
+	var canvas = document.createElement('canvas');
+	
+	var ts = 8;
+	var w = 16;
+	var h = 16;
+
+	canvas.width = ts * w;
+	canvas.height = ts * h;
+	
+	var context = canvas.getContext('2d');
+
+	function getColor(i) {
+		return 'rgb(0, 0, C)'.replace(/C/g, i);
+	}
+
+	for(var i = 0; i < 256; ++i) {
+		var x = i % 16;
+		var y = (i / 16) | 0;
+
+		var color = getColor(i);
+		context.fillStyle = color;
+		context.fillRect(x * ts, y * ts, ts, ts);
+		
+		context.font = '6px sans-serif';
+		context.fillStyle = 'white';
+		// background maps are 1-based
+		context.fillText((i+1).toString(16), x * ts + 2, (y+1) * ts, ts);
+	}
+
+	var dataUrl = canvas.toDataURL();
+
+	var img = document.createElement('img');
+	img.src = dataUrl;
+	document.body.appendChild(img);
+</script>
+</body>
+</html>
+
