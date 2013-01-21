@@ -1,11 +1,13 @@
-My next OneGameAMonth game, Dragon Plunder.  
+My next OneGameAMonth game, **Dragon Plunder**
 It's going to be a "you just killed the boss, now escape the lair before it collapses!" kind of game
 
 ## Progress So Far
-You can see my progress on it [here](https://trello.com/board/dragonplunder/50f8afda63658ee13d0012c1)
-
-So far a *lot* of the code is raw and crappy. I'm currently largely in spike mode. It will get cleaner soon :)
+You can see my trello board showing wear I'm at [here](https://trello.com/board/dragonplunder/50f8afda63658ee13d0012c1)  
   
-![dragon](https://raw.github.com/city41/dragonPlunder/master/sketches/deadDragonScaled.png)
+Or check the game out on [indiedb](http://www.indiedb.com/games/dragon-plunder)
+
+![title](https://raw.github.com/city41/dragonPlunder/master/screens/dragonPlunderTitleScreen.png)  
+  
+![gameplay](https://raw.github.com/city41/dragonPlunder/master/screens/openingShot.png)
 
 
